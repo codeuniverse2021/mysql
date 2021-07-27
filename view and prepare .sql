@@ -17,6 +17,7 @@ drop view joinedData;
  -- The fields in  a view are fields from one or more real 
  -- tables in the database.
  
+ --it's just comment
  prepare abc from
  ' select * from products where catid=? or price>?' ;
  set @id=101;
