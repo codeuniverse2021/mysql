@@ -1,6 +1,8 @@
 create database main;
 use main;
+show tables;
  drop database  main;
+
  create table categories(cat_id varchar(50) primary key,cat_name varchar(50),abcd varchar(200));
  create table products(p_id varchar(50) primary key,cat_id varchar(50),p_name varchar(50),xyz varchar(50),constraint product1 foreign key(cat_id) references categories(cat_id));
  desc products;
